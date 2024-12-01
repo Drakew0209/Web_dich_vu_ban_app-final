@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lịch sử đơn hàng</title>
+  <link rel="stylesheet" href="/style/copy-tt2.css">
+  <link rel="stylesheet" href="/style/style.css">
+  <link rel="stylesheet" href="/style/modal.css">
+  <script src="/js/Index.js" defer></script>
+  <link rel="stylesheet" href="/icon/themify-icons/themify-icons.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+  <div class="main">
+    <!-- header -->
+    <div class="header">
+      <div class="top-bar">
+        <div class="text-slider">
+            <div class="slider-content">
+                <a href="#">
+                    <i class="fas fa-chevron-left" id="prev-btn"></i>
+                    <span class="text">Thiết kế dễ dàng cùng Canva Pro</span>
+                    <i class="fas fa-chevron-right" id="next-btn"></i>
+                </a>
+            </div>
+        </div>
+        <div>
+            <a href="#">
+                <i class="fas fa-book"></i>
+                Hướng dẫn mua hàng
+            </a>
+            <a href="#">
+                <i class="fas fa-gift"></i>
+                Ưu đãi khách hàng
+            </a>
+            <a href="#">
+                <i class="fas fa-phone"></i>
+                Thông tin liên hệ
+            </a>
+        </div>
+    </div>
+
+
+      <div class="main-header">
+        <div class="oc">
+          <div class="top-user">
+            <div class="bar_reponsive">
+              <i class="fa fa-bars " aria-hidden="true" style="font-size: 30px;"></i>
+            </div>
+            <div class="sw logo">
+              <a href="./index_logged in.html"><img src="/img/bugatii.png" alt="" width="100px" height="200px" class="logo"> </a>
+            </div>
+            <div class="search-bar">
+              <input placeholder="Tìm kiếm sản phẩm" type="text" />
+              <a href="./page_user/Product-all-user.html"> <i class="ml-1 fas fa-search"></i> </a>
+            </div>
+
+            <div class="cart-info " style="position: relative;">
+              <div class="d-flex align-items-center">
+                <img
+                  src="https://cdn.divineshop.vn/image/catalog/icon/avatar-khach-hang-2-52544.png?hash=1649933269"
+                  style="width: 50px; height: 50px; border-radius: 50%;" alt="">
+                <p class="mb-0 ml-2" style="font-weight: bold;" id="name_login">
+                  
+                </p>
+              </div>
+              <div class="dropdown-menu" style="display: none; position: absolute; top: 100%; left: 0; background-color: white; border: 1px solid #ccc; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); z-index: 1000; width: 200px; border-radius: 5px;">
+                <a href="./user-information.html" style="display: block; padding: 10px; text-decoration: none; color: black;">Quản lý tài khoản</a>
+                <a href="./order-history.html" style="display: block; padding: 10px; text-decoration: none; color: black;">Lịch sử đơn hàng</a>
+                <a href="../index.html" id="logout" style="display: block; padding: 10px; text-decoration: none; color: black;">Đăng xuất</a>
+              </div>
+            </div>
+            
+            <style>
+              .cart-info:hover .dropdown-menu {
+                display: block !important;
+              }
+              .dropdown-menu a:hover {
+                background-color: #f0f0f0;
+              }
+            </style>
+            
+            <a href="./giohang.html" style="text-decoration: none; color: #fff;">
+              <div class="cart-2" s>
+                <i class="fas fa-shopping-cart"></i>
+                <div class="cart_reponsive">
+                  Giỏ hàng
+                </div>
+                <span class="so2giohang">2</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="user-2">
+            <a href="../page_user/index_logged in.html">
+              <i class="fas fa-eye"></i>
+              Tất cả sản phẩm
+            </a>
+
+
+            <a href="spnb">
+              <i class="fas fa-fire"></i>
+              Sản phẩm nổi bật
+            </a>
+
+            <a href="#">
+              <i class="fas fa-percent"></i>
+              Sản phẩm khuyến mại
+            </a>
+
+            <a href="#">
+              <i class="fas fa-briefcase"></i>
+              Tuyển dụng
+            </a>
+
+            <a href="#">
+              <i class="fas fa-credit-card"></i>
+              Hình thức thanh toán
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <div class="btn-drop">
+          <div class="dropbtn"><button id="toggleButton"><i class="fas fa-list"></i> Danh mục sản phẩm </button>
+          </div>
+          <div class="right-category">
+            <a href="" class="category-1"><i class="ti-"></i> Thủ thuật tin tức </a>
+            <a href="" class="category-1"><i class="ti-"></i> Hướng dẫn mua hàng</a>
+            <a href="" class="category-1"><i class="ti-"></i>Liên hệ hợp tác</a>
+            <a href="" class="category-1"><i class="ti-"></i>Ưu đãi khách hàng VIP</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-2">
+      <div class="cart-1  cart-1-reponsive">
+        <i class="fas fa-user"></i>
+        <button class="btn js-login "> Đăng nhập </button> /
+        <button class="btn js-register"> Đăng ký </button>
+
+
+        <i class="fa fa-times close-btn-header" aria-hidden="true" style="border:none !important; font-size: 20px;"></i>
+
+      </div>
+      <div class="cart-1  cart-1-reponsive cart_2_reponsive" >
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center ml-3">
+              <div>
+                <img
+                src="https://cdn.divineshop.vn/image/catalog/icon/avatar-khach-hang-2-52544.png?hash=1649933269"
+                style="width: 50px; height: 50px; border-radius: 50%;" alt="">
+                <p class="mb-0 ml-2" style="font-weight: bold;" id="name_login_reponsive">
+                  
+                </p>
+              </div>
+          </div>
+          <i class="fa fa-times close-btn-header-2" aria-hidden="true" style="border:none !important; font-size: 20px;"></i>
+
+        </div>
+      </div>
+      <div class="user-2">
+        
+        <a href="pages/Product-all.html">
+          <i class="fa fa-home" aria-hidden="true"></i>
+          Trang chủ
+        </a>
+        <a href="pages/Product-all.html">
+          <i class="fa fa-plus-circle" aria-hidden="true"></i>
+            Nạp tiền
+        </a>
+        <hr>
+        <a href="pages/Product-all.html">
+          <i class="fas fa-eye"></i>
+          Tất cả sản phẩm
+        </a>
+        <a href="spnb">
+          <i class="fas fa-fire"></i>
+          Sản phẩm nổi bật
+        </a>
+
+        <a href="#">
+          <i class="fas fa-percent"></i>
+          Sản phẩm khuyến mại
+        </a>
+
+        <a href="#">
+          <i class="fas fa-briefcase"></i>
+          Tuyển dụng
+        </a>
+
+        <a href="#">
+          <i class="fas fa-credit-card"></i>
+          Hình thức thanh toán
+        </a>
+      </div>
+    </div>
+<div class="Tg Vg W ih Xg">
+  <div class="va nc Ug jh Ic Lc dh eh _g Vc Yg xc tc">
+    <div>
+      <a style="color: #000;" class="va Oe Mc bh ch Jd Kd hg be Af yf Nc" href="./user-information.html"
+        ><svg
+          class="rd Xb Eb Fa"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+        >
+          <title >Tài khoản</title>
+          <path
+            d="M256 288c79.5 0 144-64.5 144-144S335.5 0 256 0 112 64.5 112 144s64.5 144 144 144zm128 32h-55.1c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16H128C57.3 320 0 377.3 0 448v16c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48v-16c0-70.7-57.3-128-128-128z"
+          ></path>
+        </svg>
+        <div class="xa Ug tc vc" >Tài khoản</div></a
+      >
+    </div>
+    <div>
+      <a style="color: #007bff; font-weight: 600; border-left: 6px solid #007bff;"  class="va Oe Mc bh ch Jd Kd hg be Af yf Rc le" href="./order-history.html"
+        ><svg
+          class="rd Xb Eb Fa"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 576 512"
+        >
+          <title>Lịch sử đơn hàng</title>
+          <path
+            d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"
+          ></path>
+        </svg>
+        <div class="xa Ug tc vc">Lịch sử đơn hàng</div></a
+      >
+    </div>
+  </div>
+<div class="qh Va ah ud fh _g Vc"><div class="Me"><h4>Lịch sử đơn hàng</h4><div class="je">Hiển thị thông tin các sản phẩm bạn đã mua tại Brother Shop</div></div><div class="f Kd"></div><div style="overflow: hidden;" class="Ye"><form><div class="va gc th Qe"><div class="Yb va hc Qe"><div class="if sg xh"><div class="z"><input class="g h" name="id" value=""><label>Mã đơn hàng</label></div></div><div class="gf sg vh"><div class="z"><input class="g h" name="amount_from" value=""><label>Số tiền từ</label></div></div><div class="gf sg vh"><div class="z"><input class="g h" name="amount_to" value=""><label>Số tiền đến</label></div></div><div class="gf sg wh"><div class="z"><input class="g h i" name="date_from" type="date" value=""><label>Từ ngày</label></div></div><div class="gf sg wh"><div class="z"><input class="g h i" name="date_to" type="date" value=""><label>Đến ngày</label></div></div></div><div><button type="submit" class="b c va Le kc"><svg class="rd Eb Fa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M479.968 0H32.038C3.613 0-10.729 34.487 9.41 54.627L192 237.255V424a31.996 31.996 0 0 0 10.928 24.082l64 55.983c20.438 17.883 53.072 3.68 53.072-24.082V237.255L502.595 54.627C522.695 34.528 508.45 0 479.968 0zM288 224v256l-64-56V224L32 32h448L288 224z"></path></svg><div>Lọc</div></button></div></div></form><div class="Se"><table class="s fb"><thead><tr><th class="t Mb">Trạng Thái Sản Phẩm</th><th class="t Hg">Mã đơn hàng</th><th class="t Ob">Sản phẩm</th><th class="t Xd">Tổng tiền</th></tr></thead><tbody><tr><td class="t Hg" rowspan="1">Hoàn thành</td><td class="t" rowspan="1">7425443</td><td class="t"><div class="va oc Le"><div>YouTube Premium + YouTube Music 6 tháng - Gia hạn chính chủ</div><div>x1</div></div></td><td class="t Xd" rowspan="1">269.000đ</td><td class="t Hg fe" rowspan="1">Đã xử lý</td><td class="t Wd" rowspan="1"><a class="xc ke" href="/user/order?id=7425443">Chi tiết</a></td></tr><tr><td class="t Hg" rowspan="1">Đang xử lí</td><td class="t" rowspan="1">7398608</td><td class="t"><div class="va oc Le"><div>Tinder Plus 6 tháng - Nâng cấp chính chủ</div><div>x1</div></div></td><td class="t Xd" rowspan="1">49.000đ</td><td class="t Hg fe" rowspan="1">Đã xử lý</td><td class="t Wd" rowspan="1"><a class="xc ke" href="/user/order?id=7398608">Chi tiết</a></td></tr></tbody></table></div></div></div>
+</div>
+
+<footer>
+    <div class="footer-best">
+      <div class="top-footer">
+        <div class="pay">
+          <a href="#"><img src="/icon/momo banking icon.png" alt="momo" width="30px" height="30px"></a>
+          <a href="#"><img src="https://cdn.divineshop.vn/static/72a3a36fc7c66085b3f442940ba45fde.svg" alt="vn pay"
+              width="70px" height="30px"></a>
+          <a href="#"><img src="/icon/visa icon.png" alt="visa" width="70px" height="30px"></a>
+          <a href="#"><img src="/icon/master card icon.png" alt="master card" width="50px" height="30px"></a>
+          <div class="pay1">
+            <span>và nhiều hình thức thanh toán khác </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-center">
+        <div class="social-links">
+          <a href=""><img src="/icon/icon facebook.png" alt="facebook" width="40px" height="30px"></a>
+          <a href=""><img src="/icon/icon youtube.png" alt="youtube" width="40px" height="30px"></a>
+          <a href=""><img src="/icon/instargram icon.png" alt="instargram" width="40px" height="30px"></a>
+        </div>
+
+        <div class="footer-section">
+          <div class="footer-column">
+            <h3>Giới Thiệu</h3>
+            <div class="footer-column1">
+              <ul>
+                <li>
+                  <a href="#">Game bản quyền là gì?</a>
+                </li>
+                <li>
+                  <a href="#">Giới thiệu AE shop</a>
+                </li>
+                <li>
+                  <a href="#">Điều khoản dịch vụ</a>
+                </li>
+                <li>
+                  <a href="#">Chính sách bảo mật</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3>Cài đặt</h3>
+            <div class="footer-column2">
+              <ul>
+                <li>
+                  <a href="#">Cài đặt tài khoản</a>
+                </li>
+                <li>
+                  <a href="#">Quản lí bảo mật</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3>Liên hệ</h3>
+            <div class="footer-column3">
+              <ul>
+                <li>
+                  <a href="#">Hotline tự động <span style="color: red;">1900 599 850</span> </a>
+                </li>
+                <li>
+                  <a href="#">Liên hệ hỗ trợ</a>
+                </li>
+                <li>
+                  <a href="#">Chat với CSKH</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </div>
+
+  <!-- Đăng nhập modal -->
+  <div class="login-modal js-modal-login" style="z-index: 2000;">
+    <div class="form-container js-modal-login-container">
+      <div class="close-btn js-modal-login-close">
+        <i class="fas fa-times"></i>
+      </div>
+      <h2 class="d-flex">
+        <button class="tab-btn active" onclick="showTab('login')">Đăng nhập</button>
+        <button class="tab-btn" onclick="showTab('register')">Đăng ký</button>
+      </h2>
+       <div  id="login-tab" class="tab-content active">
+          <div>
+            <p id="tab-desc">
+              Đăng nhập để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích và nhận nhiều ưu đãi hấp dẫn.
+            </p>
+            <form id="loginForm">
+              <label>Email hoặc tên đăng nhập:</label>
+              <input type="text" id="usernameLogin" />
+              <label>Mật khẩu:</label>
+              <input type="password" id="passwordLogin" />
+              <div class="forgot-password">
+                <a href="#" id="Forgot_Password" class="tab-btn"  onclick="showTab('forgot_password')" >Bạn quên mật khẩu?</a>
+              </div>
+              <button type="submit">Đăng nhập</button>
+            </form>
+          </div>
+       </div>
+ 
+       <div id="register-tab" class="tab-content">
+        <p>
+          Đăng ký để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích và nhận nhiều ưu đãi hấp dẫn
+        </p>
+        <form id="register-form">
+          <label for="name">Họ và Tên:</label>
+          <input type="text" id="name" />
+          
+        
+          <label for="email">Email:</label>
+          <input type="email" id="email" />
+        
+          <label for="username">Tên đăng nhập:</label>
+          <input type="text" id="username" />
+        
+          <label for="password">Mật khẩu:</label>
+          <input type="password" id="password" />
+        
+          <label for="confirm-password">Xác nhận mật khẩu:</label>
+          <input type="password" id="confirm-password" />
+        
+          <div class="accept">
+            <label>
+              <input type="checkbox" id="accept-terms" />
+              Tôi đồng ý nhận thông tin marketing mới từ App Shop.
+            </label>
+          </div>
+        
+          <button type="submit">Đăng ký</button>
+        </form>
+       </div>
+       <div  id="forgot_password-tab" class="tab-content">
+        <div>
+          <h2>Đặt lại mật khẩu</h2>
+          <p>Bạn vui lòng hoàn tất các thông tin xác thực bên dưới để chúng tôi đặt lại mật khẩu cho tài khoản của bạn          </p>
+          <form id="PasswordForm">
+          
+            <input type="text" id="usernamePassword" placeholder="Email hoặc tên đăng nhập"/>
+            <input type="password" id="newPassword" placeholder="Mật khẩu mới"/>
+            <input type="password" id="confirmPassword" placeholder="Nhập lại mật khẩu mới"/>
+            
+            <button type="submit">Đặt lại mật khẩu</button>
+          </form>
+        </div>
+       </div>
+      
+      <div class="social-login">
+        <a href="#"><i class="fab fa-google"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+    <div class="illustration">
+      <img src="./img/login.svg" alt="">
+    </div>
+  </div>
+  
+  <!-- Đăng ký modal -->
+  <div class="register-modal js-modal-register">
+    <div class="form-container js-modal-register-container">
+      <div class="close-btn js-modal-register-close">
+        <i class="fas fa-times">
+        </i>
+      </div>
+      <h2>
+        <a href="">Đăng nhập</a> / <a href="">Đăng ký</a>
+      </h2>
+      <p>
+        Đăng ký để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích và nhận nhiều ưu đãi hấp dẫn
+      </p>
+      <form>
+        <label for="">Họ và Tên:</label>
+        <input type="text" />
+        <label for="">Email:</label>
+        <input type="email">
+        <label for="">Tên đăng nhập:</label>
+        <input type="text">
+        <label for="">Mật khẩu:</label>
+        <input type="password" />
+        <label for="">Xác nhận mật khẩu:</label>
+        <input type="password">
+        <div class="accept">
+          <label><input type="checkbox"> Tôi đồng ý nhận thông tin marketing mới từ App Shop. </label>
+        </div>
+        <button type="submit">
+          Đăng ký
+        </button>
+      </form>
+    </div>
+    <div class="illustration">
+      <img src="./img/login.svg" alt="">
+    </div>
+  </div>
+  
+  <div class="modal-backdrop js-modal-backdrop">
+   
+  </div>
+
+    <div class="register-modal js-modal-Forgot Password">
+      <div class="form-container">
+        <div class="close-btn js-modal-register-close">
+          <i class="fas fa-times">
+          </i>
+        </div>
+        
+      </div>
+      <div class="illustration">
+        <img src="./img/login.svg" alt="">
+      </div>
+    </div>
+  </body>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+</html>

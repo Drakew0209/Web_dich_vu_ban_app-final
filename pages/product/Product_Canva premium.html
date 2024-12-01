@@ -1,0 +1,522 @@
+<html>
+
+<head>
+    <title>
+      Canva premium
+    </title>
+     <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./style/modal.css">
+  <script src="./js/Index.js" defer></script>
+  <link rel="stylesheet" href="./icon/themify-icons/themify-icons.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="main">
+
+     <div class="header">
+      <div class="top-bar">
+        <div class="text-slider">
+          <div class="slider-content">
+            <a href="#">
+              <i class="fas fa-chevron-left" id="prev-btn"></i>
+              <span class="text">Thiết kế dễ dàng cùng Canva Pro</span>
+              <i class="fas fa-chevron-right" id="next-btn"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <a href="#">
+            <i class="fas fa-book"></i>
+            Hướng dẫn mua hàng
+          </a>
+          <a href="#">
+            <i class="fas fa-gift"></i>
+            Ưu đãi khách hàng
+          </a>
+          <a href="#">
+            <i class="fas fa-phone"></i>
+            Thông tin liên hệ
+          </a>
+        </div>
+      </div>
+
+
+      <div class="main-header">
+        <div class="oc">
+          <div class="top-user">
+            <div class="bar_reponsive">
+              <i class="fa fa-bars " aria-hidden="true" style="font-size: 30px;"></i>
+            </div>
+            <div class="sw logo">
+              <a href=""><img src="./img/bugatii.png" alt="" width="100px" height="200px" class="logo"> </a>
+            </div>
+            <div class="search-bar">
+              <input placeholder="Tìm kiếm sản phẩm" type="text" />
+              <a href="pages/Product-all.html"> <i class="ml-1 fas fa-search"></i> </a>
+            </div>
+
+            <div class="cart-1">
+              <i class="fas fa-user"></i>
+              <button class="btn js-login "> Đăng nhập </button> /
+              <button class="btn js-register"> Đăng ký </button>
+            </div>
+            <div class="cart-info " style="position: relative; display: none !important;">
+              <div class="d-flex align-items-center">
+                <img
+                  src="https://cdn.divineshop.vn/image/catalog/icon/avatar-khach-hang-2-52544.png?hash=1649933269"
+                  style="width: 50px; height: 50px; border-radius: 50%;" alt="">
+                <p class="mb-0 ml-2" style="font-weight: bold;" id="name_login">
+                  
+                </p>
+              </div>
+              <div class="dropdown-menu" style="display: none; position: absolute; top: 100%; left: 0; background-color: white; border: 1px solid #ccc; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); z-index: 1000; width: 200px; border-radius: 5px;">
+                <a href="#" style="display: block; padding: 10px; text-decoration: none; color: black;">Quản lý tài khoản</a>
+                <a href="#" style="display: block; padding: 10px; text-decoration: none; color: black;">Lịch sử đơn hàng</a>
+                <a href="#" id="logout" style="display: block; padding: 10px; text-decoration: none; color: black;">Đăng xuất</a>
+              </div>
+            </div>
+            
+            <style>
+              .cart-info:hover .dropdown-menu {
+                display: block !important;
+              }
+              .dropdown-menu a:hover {
+                background-color: #f0f0f0;
+              }
+            </style>
+            
+            <a href="./giohang.html" style="text-decoration: none; color: #fff;">
+              <div class="cart-2" s>
+                <i class="fas fa-shopping-cart"></i>
+                <div class="cart_reponsive">
+                  Giỏ hàng
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="user-2">
+            <a href="pages/Product-all.html">
+              <i class="fas fa-eye"></i>
+              Tất cả sản phẩm
+            </a>
+
+
+            <a href="spnb">
+              <i class="fas fa-fire"></i>
+              Sản phẩm nổi bật
+            </a>
+
+            <a href="#">
+              <i class="fas fa-percent"></i>
+              Sản phẩm khuyến mại
+            </a>
+
+            <a href="#">
+              <i class="fas fa-briefcase"></i>
+              Tuyển dụng
+            </a>
+
+            <a href="#">
+              <i class="fas fa-credit-card"></i>
+              Hình thức thanh toán
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <div class="btn-drop">
+          <div class="dropbtn"><button id="toggleButton"><i class="fas fa-list"></i> Danh mục sản phẩm </button>
+          </div>
+          <div class="right-category">
+            <a href="" class="category-1"><i class="ti-"></i> Thủ thuật tin tức </a>
+            <a href="" class="category-1"><i class="ti-"></i> Hướng dẫn mua hàng</a>
+            <a href="" class="category-1"><i class="ti-"></i>Liên hệ hợp tác</a>
+            <a href="" class="category-1"><i class="ti-"></i>Ưu đãi khách hàng VIP</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-2">
+      <div class="cart-1  cart-1-reponsive">
+        <i class="fas fa-user"></i>
+        <button class="btn js-login "> Đăng nhập </button> /
+        <button class="btn js-register"> Đăng ký </button>
+
+
+        <i class="fa fa-times close-btn-header" aria-hidden="true" style="border:none !important; font-size: 20px;"></i>
+
+      </div>
+      <div class="cart-1  cart-1-reponsive cart_2_reponsive" >
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center ml-3">
+              <div>
+                <img
+                src="https://cdn.divineshop.vn/image/catalog/icon/avatar-khach-hang-2-52544.png?hash=1649933269"
+                style="width: 50px; height: 50px; border-radius: 50%;" alt="">
+                <p class="mb-0 ml-2" style="font-weight: bold;" id="name_login_reponsive">
+                  
+                </p>
+              </div>
+          </div>
+          <i class="fa fa-times close-btn-header-2" aria-hidden="true" style="border:none !important; font-size: 20px;"></i>
+
+        </div>
+      </div>
+      <div class="user-2">
+        
+        <a href="pages/Product-all.html">
+          <i class="fa fa-home" aria-hidden="true"></i>
+          Trang chủ
+        </a>
+        <a href="pages/Product-all.html">
+          <i class="fa fa-plus-circle" aria-hidden="true"></i>
+            Nạp tiền
+        </a>
+        <hr>
+        <a href="pages/Product-all.html">
+          <i class="fas fa-eye"></i>
+          Tất cả sản phẩm
+        </a>
+        <a href="spnb">
+          <i class="fas fa-fire"></i>
+          Sản phẩm nổi bật
+        </a>
+
+        <a href="#">
+          <i class="fas fa-percent"></i>
+          Sản phẩm khuyến mại
+        </a>
+
+        <a href="#">
+          <i class="fas fa-briefcase"></i>
+          Tuyển dụng
+        </a>
+
+        <a href="#">
+          <i class="fas fa-credit-card"></i>
+          Hình thức thanh toán
+        </a>
+      </div>
+    </div>
+
+        <div class="container">
+            <div class="product-main">
+                <div class="product">
+                    
+                    <img alt="Spotify Premium" src="./img/Canva-giahan-1nam.png" />
+                    <div class="product-kid"> <img src="./img/Canva-giahan-1nam.png" alt="" > </div>
+                    <div class="product-details">
+                        <a href="#" style="text-decoration: none; color: #302d2d;">Sản phẩm</a>
+                        <h1>
+                            Canva Pro 1 năm - Gia hạn chính chủ
+                        </h1>
+                        <div id="id">
+                          <i class="ti-split-v-alt"></i>  Mã sản phẩm: ###
+                        </div>
+                        <div class="status">
+                           <i class="ti-package"></i> Tình trạng: Còn cái lol
+                        </div>
+                        <div class="tags">
+                               <i class="ti-bookmark-alt"></i> Thể loại: Canva, giáo dục, App
+                        </div>
+                        <div class="price">
+                            295.000đ <i class="ti-bell"></i> <i class="ti-heart"></i>
+                        </div>
+                        <div class="duration">
+                            <button>
+                                TK 1 năm
+                            </button>
+                        </div>
+                        <div class="actions">
+                            <button>
+                                <i class="ti-credit-card"></i>  Mua Ngay
+                              </button>
+                            <button class="secondary">
+                               <i class="ti-shopping-cart"></i> Thêm vào giỏ hàng
+                            </button>
+
+                        </div>
+                    </div>
+
+
+            </div>
+
+            </div>
+            <div class="product-total">
+                <div class="product-big-total"><h2>
+                    Chi tiết sản phẩm
+                </h2>
+            </div>
+                <div class="product-description">
+                    <h3>Canva Pro là gì?</h3>
+                <p>
+                    <span style="font-weight: 600;">Canva</span> à một nền tảng thiết kế mạnh mẽ và linh hoạt, được thiết kế để đáp ứng mọi nhu cầu sáng tạo của bạn. Với Canva Pro, bạn có thể truy cập vào một thư viện tài nguyên sáng tạo vô cùng đa dạng, bao gồm hàng triệu hình ảnh và video chất lượng cao, giúp làm phong phú hơn mọi thiết kế của bạn.
+                </p>
+                <p>
+                    <img src="./img/Canva-quảng cáo.png">
+                </p>
+                
+                <div class="additional-content" style="display: none;">
+                    <h3>Xây dựng và phát triển thương hiệu</h3>
+                    <p>Quản lý thương hiệu, dễ dàng tạo được nội dung mang tính "cá nhân"</p>
+                    <p>- Xây dựng thương hiệu bằng mẫu Pro </p>
+                    <p>- Dễ dàng áp dụng các tài sản thương hiệu vào thiết kế bất kỳ nhờ Bộ thương hiệu</p>
+                    <p>- Thay thế và cập nhật hình ảnh cũng như logo trên các thiết kế bằng một nhấp</p>
+                    <h3>Cách thức bảo hành</h3>
+                    <p>- Đổi sản phẩm mới tương đương hoặc hoàn tiền theo thời gian chưa sử dụng.</p>
+                    <p>- Trong trường hợp hết hàng để đổi mới, hoàn tiền theo quy tắc:</p>
+                    <p> • Dưới 30 ngày: Hoàn 100% giá trị đơn hàng</p>
+                    <p>• Sau 30 ngày: Hoàn tiền theo theo thời gian chưa sử dụng (VD gói 12 tháng nếu sử dụng được 6 tháng phát sinh lỗi thì sẽ được hoàn lại 50% giá trị đơn hàng)</p>
+                </div>
+
+                <button class="toggle-button">Xem thêm</button>
+            </div>
+            </div>
+
+    <div class="total-insite-content">
+
+        <div class="products">
+            <div class="h2">
+                <h2>Bạn có thể thích</h2>
+            </div>
+            <div class="products-grid">
+
+            <div class="products-card">
+                <a href="./Product_Spotify_1nam.html" >
+                <img src="./icon/spotify 6 thang icon.png" alt="spotify img">
+                </a>
+                <div class="product-detail">
+                    <p>Spotify Premium - 6 tháng</p>
+                    <span>189.000đ</span>
+                </div>
+            </div>
+            <div class="products-card">
+                <a href="./product-Netflix 1 thang premium.html">
+                <img src="./img/netflix premium img.png" alt="netflix img">
+                </a>
+                <div class="product-detail">
+                    <p>Netflix Premium - 1 tháng</p>
+                    <span>79.000đ</span>
+                </div>
+            </div>
+            <div class="products-card">
+                <a href="./Product_Youtube_1 năm .html">
+                <img src="./img/youtube premium img.png" alt="youtube img">
+                </a>
+                <div class="product-detail">
+                    <p>Youtube Premium - 1 năm</p>
+                    <span>99.000đ</span>
+                </div>
+            </div>
+            <div class="products-card">
+                <a href="">
+                <img src="./img/ChatGPT Plus NangCap-1m-50562.png" alt="ChatGPT img">
+                </a>
+                <div class="product-detail">
+                    <p>ChatGPT Plus 20$ 1 tháng (GPT-4o) - Gói nâng cấp chính chủ</p>
+                    <span>490.000đ</span>
+                </div>
+            </div>
+
+            <div class="products-card">
+                <a href="">
+                <img src="./img/Notion Pro img.png" alt="notion pro img">
+                </a>
+                <div class="product-detail">
+                    <p>Notion Pro - Tài khoản vĩnh viễn</p>
+                    <span>190.000đ</span>
+                </div>
+            </div>
+            <div class="products-card">
+                <a href="">
+                <img src="./img/Turnitin img.png" alt="Turnitin img">
+                </a>
+                <div class="product-detail">
+                    <p>Turnitin - 1 tháng </p>
+                    <span>419.000đ</span>
+                </div>
+            </div>
+            <div class="products-card">
+                <a href="./Product_Microsoft 365_ 1 nam.html">
+                <img src="./img/microsoft 365 img.png" alt="microsoft 365 img">
+                </a>
+                <div class="product-detail">
+                    <p>Microsoft 365 1 năm </p>
+                    <span>390.000đ</span>
+                </div>
+            </div>
+            <div class="products-card">
+                <a href="./Product_Zoom pro 1 thang.html">
+                <img src="./img/Zoom Pro img.png" alt="Zoom pro img">
+                </a>
+                <div class="product-detail">
+                    <p>Zoom pro - 1 tháng </p>
+                    <span>210.000đ</span>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+    <footer>
+        <div class="footer-best">
+        <div class="top-footer">
+            <div class="pay">
+              <a href="#"><img src="./icon/momo banking icon.png" alt="momo" width="40px" height="30px"></a>
+              <a href="#"><img src="./icon/vn pay icon.png" alt="vn pay" width="50px"></a>
+              <a href="#"><img src="./icon/visa icon.png" alt="visa" width="50px"></a>
+              <a href="#"><img src="./icon/master card icon.png" alt="master card" width="50px"></a>
+              <div class="pay1">
+                  <span>và nhiều hình thức thanh toán khác </span>
+              </div>
+            </div>
+        </div>
+        
+        <div class="footer-center">
+        <div class="social-links">
+          <a href=""><img src="./icon/icon facebook.png" alt="facebook" width="40px" height="35px"></a>
+          <a href=""><img src="./icon/icon youtube.png" alt="youtube" width="40px" height="35px"></a>
+          <a href=""><img src="./icon/instargram icon.png" alt="instargram" width="40px" height="35px"></a>
+        </div>
+        
+        <div class="footer-section">
+          <div class="footer-column">
+              <h3>Giới Thiệu</h3>
+              <div class="footer-column1">
+                  <ul>
+                      <li>
+                          <a href="#">Game bản quyền là gì?</a>
+                      </li>
+                      <li>
+                          <a href="#">Giới thiệu AE shop</a>
+                      </li>
+                      <li>
+                          <a href="#">Điều khoản dịch vụ</a>
+                      </li>
+                      <li>
+                          <a href="#">Chính sách bảo mật</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="footer-column">
+              <h3>Cài đặt</h3>
+              <div class="footer-column2">
+                  <ul>
+                      <li>
+                          <a href="#">Cài đặt tài khoản</a>
+                      </li>
+                      <li>
+                          <a href="#">Quản lí bảo mật</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="footer-column">
+              <h3>Liên hệ</h3>
+              <div class="footer-column3">
+                  <ul>
+                      <li>
+                          <a href="#">Hotline tự động <span style="color: red;">1900 599 850</span> </a>
+                      </li>
+                      <li>
+                          <a href="#">Liên hệ hỗ trợ</a>
+                      </li>
+                      <li>
+                          <a href="#">Chat với CSKH</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+        </div>
+        </div>
+        </div>
+        </footer>
+    </div>
+<!-- Đăng nhập modal -->
+<div class="login-modal js-modal-login">
+    <div class="form-container js-modal-login-container">
+        <div class="close-btn js-modal-login-close">
+            <i class="fas fa-times">
+            </i>
+        </div>
+        <h2>
+            <a href="">Đăng nhập</a> / <a href="">Đăng ký</a>
+        </h2>
+        <p>
+            Đăng nhập để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích và nhận nhiều ưu đãi hấp dẫn
+        </p>
+        <form>
+            <input placeholder="Email hoặc tên đăng nhập" type="text" />
+            <input placeholder="Mật khẩu" type="password" />
+            <div class="forgot-password">
+                <a href="#">
+                    Bạn quên mật khẩu?
+                </a>
+            </div>
+            <button type="submit">
+                Đăng nhập
+            </button>
+        </form>
+        <div class="social-login">
+            <a href="#">
+                <i class="fab fa-google">
+                </i>
+            </a>
+            <a href="#">
+                <i class="fab fa-facebook">
+                </i>
+            </a>
+        </div>
+    </div>
+    <div class="illustration">
+        <img src="./img/đăng ký.svg" alt="">
+    </div>
+</div>
+
+<!-- Đăng ký modal -->
+<div class="register-modal js-modal-register">
+    <div class="form-container js-modal-register-container">
+        <div class="close-btn js-modal-register-close">
+            <i class="fas fa-times">
+            </i>
+        </div>
+        <h2>
+            <a href="">Đăng nhập</a> / <a href="">Đăng ký</a>
+        </h2>
+        <p>
+            Đăng ký để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích và nhận nhiều ưu đãi hấp dẫn
+        </p>
+        <form>
+            <input placeholder="Họ Và Tên" type="text" />
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Tên đăng nhập">
+            <input placeholder="Mật khẩu" type="password" />
+            <input type="password" placeholder="Nhập lại mật khẩu">
+            <div class="accept">
+                <label><input type="checkbox"> Tôi đồng ý nhận thông tin marketing mới từ App Shop. </label>
+            </div>
+            <button type="submit">
+                Đăng ký
+            </button>
+        </form>
+    </div>
+    <div class="illustration">
+        <img src="./img/login.svg" alt="">
+    </div>
+</div>
+<div class="modal-backdrop js-modal-backdrop"></div>
+</body>
+
+
+</html>

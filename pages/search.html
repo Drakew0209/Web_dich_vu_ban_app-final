@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/js/Index.js" defer></script>
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/style-all-product-notuser.css">
+    <link rel="stylesheet" href="/style/modal.css">
+    <link rel="stylesheet" href="/icon/themify-icons/themify-icons.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    </head>
+<div class="main">
+  <div class="header">
+    <div class="top-bar">
+      <div class="text-slider">
+        <div class="slider-content">
+          <a href="#">
+            <i class="fas fa-chevron-left" id="prev-btn"></i>
+            <span class="text">Thiết kế dễ dàng cùng Canva Pro</span>
+            <i class="fas fa-chevron-right" id="next-btn"></i>
+          </a>
+        </div>
+      </div>
+      <div>
+        <a href="#">
+          <i class="fas fa-book"></i>
+          Hướng dẫn mua hàng
+        </a>
+        <a href="#">
+          <i class="fas fa-gift"></i>
+          Ưu đãi khách hàng
+        </a>
+        <a href="#">
+          <i class="fas fa-phone"></i>
+          Thông tin liên hệ
+        </a>
+      </div>
+    </div>
+
+
+    <div class="main-header">
+      <div class="oc">
+        <div class="top-user">
+          <div class="bar_reponsive">
+            <i class="fa fa-bars " aria-hidden="true" style="font-size: 30px;"></i>
+          </div>
+          <div class="sw logo">
+            <a href="/index.html"><img src="/img/bugatii.png" alt="" width="100px" height="200px" class="logo"> </a>
+          </div>
+          <div class="search-bar">
+            <input placeholder="Tìm kiếm sản phẩm" type="text" value="kkk"/>
+            <a href="/pages/search.html"> <i class="ml-1 fas fa-search"></i> </a>
+          </div>
+
+          <div class="cart-1">
+            <i class="fas fa-user"></i>
+            <button class="btn js-login "> Đăng nhập </button> /
+            <button class="btn js-register"> Đăng ký </button>
+          </div>
+          <div class="cart-info " style="position: relative; display: none !important;">
+            <div class="d-flex align-items-center">
+              <img
+                src="https://cdn.divineshop.vn/image/catalog/icon/avatar-khach-hang-2-52544.png?hash=1649933269"
+                style="width: 50px; height: 50px; border-radius: 50%;" alt="">
+              <p class="mb-0 ml-2" style="font-weight: bold;" id="name_login">
+                
+              </p>
+            </div>
+            <div class="dropdown-menu" style="display: none; position: absolute; top: 100%; left: 0; background-color: white; border: 1px solid #ccc; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); z-index: 1000; width: 200px; border-radius: 5px;">
+              <a href="#" style="display: block; padding: 10px; text-decoration: none; color: black;">Quản lý tài khoản</a>
+              <a href="#" style="display: block; padding: 10px; text-decoration: none; color: black;">Lịch sử đơn hàng</a>
+              <a href="#" id="logout" style="display: block; padding: 10px; text-decoration: none; color: black;">Đăng xuất</a>
+            </div>
+          </div>
+          
+          <style>
+            .cart-info:hover .dropdown-menu {
+              display: block !important;
+            }
+            .dropdown-menu a:hover {
+              background-color: #f0f0f0;
+            }
+          </style>
+          
+          <a href="./giohang.html" style="text-decoration: none; color: #fff;">
+            <div class="cart-2" s>
+              <i class="fas fa-shopping-cart"></i>
+              <div class="cart_reponsive">
+                Giỏ hàng
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="user-2">
+          <a href="pages/Product-all.html">
+            <i class="fas fa-eye"></i>
+            Tất cả sản phẩm
+          </a>
+
+
+          <a href="spnb">
+            <i class="fas fa-fire"></i>
+            Sản phẩm nổi bật
+          </a>
+
+          <a href="#">
+            <i class="fas fa-percent"></i>
+            Sản phẩm khuyến mại
+          </a>
+
+          <a href="#">
+            <i class="fas fa-briefcase"></i>
+            Tuyển dụng
+          </a>
+
+          <a href="#">
+            <i class="fas fa-credit-card"></i>
+            Hình thức thanh toán
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <div class="btn-drop">
+        <div class="dropbtn"><button id="toggleButton"><i class="fas fa-list"></i> Danh mục sản phẩm </button>
+        </div>
+        <div class="right-category">
+          <a href="" class="category-1"><i class="ti-"></i> Thủ thuật tin tức </a>
+          <a href="" class="category-1"><i class="ti-"></i> Hướng dẫn mua hàng</a>
+          <a href="" class="category-1"><i class="ti-"></i>Liên hệ hợp tác</a>
+          <a href="" class="category-1"><i class="ti-"></i>Ưu đãi khách hàng VIP</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-2">
+    <div class="cart-1  cart-1-reponsive">
+      <i class="fas fa-user"></i>
+      <button class="btn js-login "> Đăng nhập </button> /
+      <button class="btn js-register"> Đăng ký </button>
+
+
+      <i class="fa fa-times close-btn-header" aria-hidden="true" style="border:none !important; font-size: 20px;"></i>
+
+    </div>
+    <div class="cart-1  cart-1-reponsive cart_2_reponsive" >
+      <div class="d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center ml-3">
+            <div>
+              <img
+              src="https://cdn.divineshop.vn/image/catalog/icon/avatar-khach-hang-2-52544.png?hash=1649933269"
+              style="width: 50px; height: 50px; border-radius: 50%;" alt="">
+              <p class="mb-0 ml-2" style="font-weight: bold;" id="name_login_reponsive">
+                
+              </p>
+            </div>
+        </div>
+        <i class="fa fa-times close-btn-header-2" aria-hidden="true" style="border:none !important; font-size: 20px;"></i>
+
+      </div>
+    </div>
+    <div class="user-2">
+      
+      <a href="pages/Product-all.html">
+        <i class="fa fa-home" aria-hidden="true"></i>
+        Trang chủ
+      </a>
+      <a href="pages/Product-all.html">
+        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+          Nạp tiền
+      </a>
+      <hr>
+      <a href="pages/Product-all.html">
+        <i class="fas fa-eye"></i>
+        Tất cả sản phẩm
+      </a>
+      <a href="spnb">
+        <i class="fas fa-fire"></i>
+        Sản phẩm nổi bật
+      </a>
+
+      <a href="#">
+        <i class="fas fa-percent"></i>
+        Sản phẩm khuyến mại
+      </a>
+
+      <a href="#">
+        <i class="fas fa-briefcase"></i>
+        Tuyển dụng
+      </a>
+
+      <a href="#">
+        <i class="fas fa-credit-card"></i>
+        Hình thức thanh toán
+      </a>
+    </div>
+  </div>
+  <!-- web chính -->
+    <div class="content">
+        <div class="total-insite-content bottom-total-content">
+            <div class="text-pr-product">
+              <h2>Kết quả tìm kiếm</h2>
+            </div>
+        <form action="">
+            <div class="filter">
+                <div class="filter-product">
+                    <div class="filter-select">
+                        <select name="" id="category">
+                            <option value="">Danh mục</option>
+                            <option value="">Học tập</option>
+                            <option value="">Giải trí</option>
+                            <option value="">Game</option>
+                        </select>
+                    </div>
+                    <div class="filter-select">
+                        <select name="" id="category">
+                            <option value="">Thể loại</option>
+                            <option value="">Windows</option>
+                            <option value="">AAA</option>
+                            <option value="">Netflix And Chill</option>
+                        </select>
+                    </div>
+                    <div class="filter-select filter-select-1">
+                        <p>Mức giá</p>
+                        <div> 
+                            <input type="number" name="price-from" step="10000" placeholder="Mức giá từ"> 
+                        </div>
+                        <span> - </span>
+                        <div>
+                            <input type="number" name="price-from" step="10000" placeholder="Mức giá đến"> 
+                        </div>
+                    </div>
+                    <div class="filter-select">
+                        <select name="" id="category">
+                            <option value="">Sắp xếp</option>
+                            <option value="">Bán chạy nhất</option>
+                            <option value="">Mới cập nhật</option>
+                            <option value="">Giá thấp đến cao</option>
+                            <option value="">Giá cao đến thấp</option>
+                            <option value="">Từ A đến Z</option>
+                            <option value="">Từ Z đến A</option>
+                        </select>
+                    </div>
+                    <button><i class="fas fa-filter"></i> Lọc </button>
+                </div>
+            </div>
+        </form>
+
+        <div class="product-grid">
+                    <!-- Steam - wallet -->
+                    <a href=""><div class="product-item">
+                      <div class="img-parent"><img
+                        alt="Steam Wallet Code 50 PHP (~21.593 VNĐ)"
+                        src="/img/STEAM 50 HKD.png"
+                      /></div> 
+                      <div class="product-info">
+                        <h3>Steam Wallet Code 50 PHP (~21.593 VNĐ)</h3>
+                        <p class="price">
+                          <span class="original-price"> 28.000đ </span>
+                        </p>
+                      </div>
+                    </div>
+                    </a>
+                    <a href=""><div class="product-item">
+                      <div class="img-parent"><img
+                        alt="Steam Wallet Code 100 HKD (~326.600 VNĐ)"
+                        src="/img/STEAM-100-HKD-37245.png"
+                      /></div> 
+                      <div class="product-info">
+                        <h3>Steam Wallet Code 100 HKD (~326.600 VNĐ)</h3>
+                        <p class="price">
+                          <span class="original-price"> 350.000đ </span>
+                        </p>
+                      </div>
+                    </div>
+                    </a>
+                    <a href=""><div class="product-item">
+                      <div class="img-parent"><img
+                        alt="Steam Wallet Code 400 HKD (~1.306.400 VNĐ)"
+                        src="/img/STEAM 400 HKD.png"
+                      /></div> 
+                      <div class="product-info">
+                        <h3>Steam Wallet Code 400 HKD (~1.306.400 VNĐ)</h3>
+                        <p class="price">
+                          <span class="original-price"> 1.350.000đ </span>
+                        </p>
+                      </div>
+                    </div>
+                    </a>
+                    <!-- Xbox -->
+                    <a href=""><div class="product-item">
+                      <div class="img-parent"><img
+                        alt="XBox Microsoft Gift Card US - 100$"
+                        src="/img/XBox-100-15017.png"
+                      /></div> 
+                      <div class="product-info">
+                        <h3>XBox Microsoft Gift Card US - 100$</h3>
+                        <p class="price">
+                          <span class="original-price"> 2.500.000đ </span>
+                        </p>
+                      </div>
+                    </div>
+                    </a>
+                    <!-- Game -->
+                    <a href=""><div class="product-item">
+                      <div class="img-parent"><img
+                        alt="Grand Theft Auto V - GTA V"
+                        src="/img/GTA-V.jpg"
+                      /></div> 
+                      <div class="product-info">
+                        <h3>Grand Theft Auto V - GTA V</h3>
+                        <p class="price">
+                          <span class="original-price"> 455.000đ </span>
+                        </p>
+                      </div>
+                    </div>
+                    </a>
+                    <a href=""><div class="product-item">
+                      <div class="img-parent"><img
+                        alt="God of War"
+                        src="/img/God of war.jpg"
+                      /></div> 
+                      <div class="product-info">
+                        <h3>God of War</h3>
+                        <p class="price">
+                          <span class="original-price"> 1.159.000đ </span>
+                        </p>
+                      </div>
+                    </div>
+                    </a>
+                    <a href=""><div class="product-item">
+                      <div class="img-parent"><img
+                        alt="Subnautica"
+                        src="/img/subnautica.jpg"
+                      /></div> 
+                      <div class="product-info">
+                        <h3>Subnautica</h3>
+                        <p class="price">
+                          <span class="original-price"> 388.000đ </span>
+                        </p>
+                      </div>
+                    </div>
+                    </a>
+                    <a href=""><div class="product-item">
+                      <div class="img-parent"><img
+                        alt="Red Dead Redemption 2"
+                        src="/img/Red dead redemption.jpg"
+                      /></div> 
+                      <div class="product-info">
+                        <h3>Red Dead Redemption 2</h3>
+                        <p class="price">
+                          <span class="original-price"> 1.359.000đ </span>
+                        </p>
+                      </div>
+                    </div>
+                    </a>
+                    <a href=""><div class="product-item">
+                      <div class="img-parent"><img
+                        alt="Assassin's Creed® Origins"
+                        src="/img/assassin.jpg"
+                      /></div> 
+                      <div class="product-info">
+                        <h3>Assassin's Creed® Origins</h3>
+                        <p class="price">
+                          <span class="original-price"> 990.000đ </span>
+                        </p>
+                      </div>
+      
+           </div>
+          </a>   
+                    <a href=""><div class="product-item">
+                      <div class="img-parent"><img
+                        alt="ELDEN RING"
+                        src="/img/elden ring.jpg"
+                      /></div> 
+                      <div class="product-info">
+                        <h3>ELDEN RING</h3>
+                        <p class="price">
+                          <span class="original-price"> 990.000đ </span>
+                        </p>
+                      </div>
+
+                 </div>
+                </a>   
+        </div>
+                <nav aria-label="Page navigation" class="product__pagination mt-3">
+                  <ul class="pagination justify-content-center">
+                      <li class="page-item">
+                          <a class="page-link" aria-label="Previous">
+                              <span aria-hidden="true">«</span>
+                          </a>
+                      </li>
+                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item "><a class="page-link " href="#">2</a></li>
+                      <li class="page-item disabled">
+                          <a class="page-link" href="./all-menu_2.html" aria-label="Next">
+                              <span aria-hidden="true">»</span>
+                          </a>
+                      </li>
+                  </ul>
+              </nav>
+            </div>
+            
+    </div>
+    <footer>
+      <div class="footer-best">
+        <div class="top-footer">
+          <div class="pay">
+            <a href="#"><img src="/icon/momo banking icon.png" alt="momo" width="30px" height="30px"></a>
+            <a href="#"><img src="https://cdn.divineshop.vn/static/72a3a36fc7c66085b3f442940ba45fde.svg" alt="vn pay"
+                width="70px" height="30px"></a>
+            <a href="#"><img src="/icon/visa icon.png" alt="visa" width="70px" height="30px"></a>
+            <a href="#"><img src="/icon/master card icon.png" alt="master card" width="50px" height="30px"></a>
+            <div class="pay1">
+              <span>và nhiều hình thức thanh toán khác </span>
+            </div>
+          </div>
+        </div>
+  
+        <div class="footer-center">
+          <div class="social-links">
+            <a href=""><img src="/icon/icon facebook.png" alt="facebook" width="40px" height="30px"></a>
+            <a href=""><img src="/icon/icon youtube.png" alt="youtube" width="40px" height="30px"></a>
+            <a href=""><img src="/icon/instargram icon.png" alt="instargram" width="40px" height="30px"></a>
+          </div>
+  
+          <div class="footer-section">
+            <div class="footer-column">
+              <h3>Giới Thiệu</h3>
+              <div class="footer-column1">
+                <ul>
+                  <li>
+                    <a href="#">Game bản quyền là gì?</a>
+                  </li>
+                  <li>
+                    <a href="#">Giới thiệu AE shop</a>
+                  </li>
+                  <li>
+                    <a href="#">Điều khoản dịch vụ</a>
+                  </li>
+                  <li>
+                    <a href="#">Chính sách bảo mật</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-column">
+              <h3>Cài đặt</h3>
+              <div class="footer-column2">
+                <ul>
+                  <li>
+                    <a href="#">Cài đặt tài khoản</a>
+                  </li>
+                  <li>
+                    <a href="#">Quản lí bảo mật</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-column">
+              <h3>Liên hệ</h3>
+              <div class="footer-column3">
+                <ul>
+                  <li>
+                    <a href="#">Hotline tự động <span style="color: red;">1900 599 850</span> </a>
+                  </li>
+                  <li>
+                    <a href="#">Liên hệ hỗ trợ</a>
+                  </li>
+                  <li>
+                    <a href="#">Chat với CSKH</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+</div>
+
+  <!-- Đăng nhập modal -->
+  <div class="login-modal js-modal-login" style="z-index: 2000;">
+    <div class="form-container js-modal-login-container">
+      <div class="close-btn js-modal-login-close">
+        <i class="fas fa-times"></i>
+      </div>
+      <h2 class="d-flex">
+        <button class="tab-btn active" onclick="showTab('login')">Đăng nhập</button>
+        <button class="tab-btn" onclick="showTab('register')">Đăng ký</button>
+      </h2>
+       <div  id="login-tab" class="tab-content active">
+          <div>
+            <p id="tab-desc">
+              Đăng nhập để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích và nhận nhiều ưu đãi hấp dẫn.
+            </p>
+            <form id="loginForm">
+              <label>Email hoặc tên đăng nhập:</label>
+              <input type="text" id="usernameLogin" />
+              <label>Mật khẩu:</label>
+              <input type="password" id="passwordLogin" />
+              <div class="forgot-password">
+                <a href="#" id="Forgot_Password" class="tab-btn"  onclick="showTab('forgot_password')" >Bạn quên mật khẩu?</a>
+              </div>
+              <button type="submit">Đăng nhập</button>
+            </form>
+          </div>
+       </div>
+ 
+       <div id="register-tab" class="tab-content">
+        <p>
+          Đăng ký để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích và nhận nhiều ưu đãi hấp dẫn
+        </p>
+        <form id="register-form">
+          <label for="name">Họ và Tên:</label>
+          <input type="text" id="name" />
+          
+        
+          <label for="email">Email:</label>
+          <input type="email" id="email" />
+        
+          <label for="username">Tên đăng nhập:</label>
+          <input type="text" id="username" />
+        
+          <label for="password">Mật khẩu:</label>
+          <input type="password" id="password" />
+        
+          <label for="confirm-password">Xác nhận mật khẩu:</label>
+          <input type="password" id="confirm-password" />
+        
+          <div class="accept">
+            <label>
+              <input type="checkbox" id="accept-terms" />
+              Tôi đồng ý nhận thông tin marketing mới từ App Shop.
+            </label>
+          </div>
+        
+          <button type="submit">Đăng ký</button>
+        </form>
+       </div>
+       <div  id="forgot_password-tab" class="tab-content">
+        <div>
+          <h2>Đặt lại mật khẩu</h2>
+          <p>Bạn vui lòng hoàn tất các thông tin xác thực bên dưới để chúng tôi đặt lại mật khẩu cho tài khoản của bạn          </p>
+          <form id="PasswordForm">
+          
+            <input type="text" id="usernamePassword" placeholder="Email hoặc tên đăng nhập"/>
+            <input type="password" id="newPassword" placeholder="Mật khẩu mới"/>
+            <input type="password" id="confirmPassword" placeholder="Nhập lại mật khẩu mới"/>
+            
+            <button type="submit">Đặt lại mật khẩu</button>
+          </form>
+        </div>
+       </div>
+      
+      <div class="social-login">
+        <a href="#"><i class="fab fa-google"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+    <div class="illustration">
+      <img src="/img/login.svg" alt="">
+    </div>
+  </div>
+  
+  <!-- Đăng ký modal -->
+  <div class="register-modal js-modal-register">
+    <div class="form-container js-modal-register-container">
+      <div class="close-btn js-modal-register-close">
+        <i class="fas fa-times">
+        </i>
+      </div>
+      <h2>
+        <a href="">Đăng nhập</a> / <a href="">Đăng ký</a>
+      </h2>
+      <p>
+        Đăng ký để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích và nhận nhiều ưu đãi hấp dẫn
+      </p>
+      <form>
+        <label for="">Họ và Tên:</label>
+        <input type="text" />
+        <label for="">Email:</label>
+        <input type="email">
+        <label for="">Tên đăng nhập:</label>
+        <input type="text">
+        <label for="">Mật khẩu:</label>
+        <input type="password" />
+        <label for="">Xác nhận mật khẩu:</label>
+        <input type="password">
+        <div class="accept">
+          <label><input type="checkbox"> Tôi đồng ý nhận thông tin marketing mới từ App Shop. </label>
+        </div>
+        <button type="submit">
+          Đăng ký
+        </button>
+      </form>
+    </div>
+    <div class="illustration">
+      <img src="/img/login.svg" alt="">
+    </div>
+  </div>
+  
+  <div class="modal-backdrop js-modal-backdrop">
+   
+  </div>
+
+    <div class="register-modal js-modal-Forgot Password">
+      <div class="form-container">
+        <div class="close-btn js-modal-register-close">
+          <i class="fas fa-times">
+          </i>
+        </div>
+        
+      </div>
+      <div class="illustration">
+        <img src="/img/login.svg" alt="">
+      </div>
+    </div>
+  </body>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+</html>
