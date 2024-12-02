@@ -170,5 +170,5 @@ document.querySelector('.code_42').addEventListener('click', hidePaymentOptions)
 
 function xacNhanThanhToan() { 
     var totalPayment = document.getElementById('totalPayment').textContent; 
-    window.location.href = 'thanhtoan.html?totalPayment=' + encodeURIComponent(totalPayment);
+    window.location.href = 'thanhtoan_logged in.html?totalPayment=' + encodeURIComponent(totalPayment);
 }
