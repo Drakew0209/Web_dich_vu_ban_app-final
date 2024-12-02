@@ -791,10 +791,15 @@ footer {
     margin: 0px 5px;
 }
 
-.top-bar-top{
+.top-bar-top {
     position: fixed;
     bottom:20px;
     right: 20px;
+    background-color: #007BFF;
+    padding: 10px;
+    font-weight: 700;
+    border-radius: 25px;
+    color: #fff;
 }
 .img-parent{
     height:130px; 

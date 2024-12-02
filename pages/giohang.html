@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giỏ Hàng | Shop</title>
-    <link rel="stylesheet" href="../style/giohang.css">
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/giohang.css">
     <link rel="stylesheet" href="../style/modal.css">
-    <script src="../js/shopping cart.js" defer></script>
     <script src="../js/Index.js" defer></script>
+    <script src="../js/shopping cart.js" defer></script>
     <link rel="stylesheet" href="../icon/themify-icons/themify-icons.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -99,7 +99,7 @@
             </div>
   
             <div class="user-2">
-              <a href="..pages/Product-all.html">
+              <a href="../pages/Product-all.html">
                 <i class="fas fa-eye"></i>
                 Tất cả sản phẩm
               </a>
@@ -333,7 +333,7 @@
                     </div>
         <!--tiên đồng ngọc nữ hạ phàm và bảo các nút liên quan đến thanh toán ở đây-->
                     <div class="code_45">
-                        <button class="code_35">
+                        <button class="code_35 js-login">
                             <div> <i class="ti-user"></i> </div>
                             <div>Đăng nhập để thanh toán</div>
                         </button>
@@ -366,223 +366,225 @@
 </div>
 
 <footer>
-    <div class="footer-best">
-      <div class="top-footer">
-        <div class="pay">
-          <a href="#"><img src="../icon/momo banking icon.png" alt="momo" width="30px" height="30px"></a>
-          <a href="#"><img src="https://cdn.divineshop.vn/static/72a3a36fc7c66085b3f442940ba45fde.svg" alt="vn pay"
-              width="70px" height="30px"></a>
-          <a href="#"><img src="../icon/visa icon.png" alt="visa" width="70px" height="30px"></a>
-          <a href="#"><img src="../icon/master card icon.png" alt="master card" width="50px" height="30px"></a>
-          <div class="pay1">
-            <span>và nhiều hình thức thanh toán khác </span>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-center">
-        <div class="social-links">
-          <a href=""><img src="../icon/icon facebook.png" alt="facebook" width="40px" height="30px"></a>
-          <a href=""><img src="../icon/icon youtube.png" alt="youtube" width="40px" height="30px"></a>
-          <a href=""><img src="../icon/instargram icon.png" alt="instargram" width="40px" height="30px"></a>
-        </div>
-
-        <div class="footer-section">
-          <div class="footer-column">
-            <h3>Giới Thiệu</h3>
-            <div class="footer-column1">
-              <ul>
-                <li>
-                  <a href="#">Game bản quyền là gì?</a>
-                </li>
-                <li>
-                  <a href="#">Giới thiệu AE shop</a>
-                </li>
-                <li>
-                  <a href="#">Điều khoản dịch vụ</a>
-                </li>
-                <li>
-                  <a href="#">Chính sách bảo mật</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer-column">
-            <h3>Cài đặt</h3>
-            <div class="footer-column2">
-              <ul>
-                <li>
-                  <a href="#">Cài đặt tài khoản</a>
-                </li>
-                <li>
-                  <a href="#">Quản lí bảo mật</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer-column">
-            <h3>Liên hệ</h3>
-            <div class="footer-column3">
-              <ul>
-                <li>
-                  <a href="#">Hotline tự động <span style="color: red;">1900 599 850</span> </a>
-                </li>
-                <li>
-                  <a href="#">Liên hệ hỗ trợ</a>
-                </li>
-                <li>
-                  <a href="#">Chat với CSKH</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+  <div class="footer-best">
+    <div class="top-footer">
+      <div class="pay">
+        <a href="#"><img src="../icon/momo banking icon.png" alt="momo" width="30px" height="30px"></a>
+        <a href="#"><img src="https://cdn.divineshop.vn/static/72a3a36fc7c66085b3f442940ba45fde.svg" alt="vn pay"
+            width="70px" height="30px"></a>
+        <a href="#"><img src="../icon/visa icon.png" alt="visa" width="70px" height="30px"></a>
+        <a href="#"><img src="../icon/master card icon.png" alt="master card" width="50px" height="30px"></a>
+        <div class="pay1">
+          <span>và nhiều hình thức thanh toán khác </span>
         </div>
       </div>
     </div>
-  </footer>
 
-</body>
-  <!-- Đăng nhập modal -->
-  <div class="login-modal js-modal-login" style="z-index: 2000;">
-    <div class="form-container js-modal-login-container">
-      <div class="close-btn js-modal-login-close">
-        <i class="fas fa-times"></i>
+    <div class="footer-center">
+      <div class="social-links">
+        <a href=""><img src="../icon/icon facebook.png" alt="facebook" width="40px" height="30px"></a>
+        <a href=""><img src="../icon/icon youtube.png" alt="youtube" width="40px" height="30px"></a>
+        <a href=""><img src="../icon/instargram icon.png" alt="instargram" width="40px" height="30px"></a>
       </div>
-      <h2 class="d-flex">
-        <button class="tab-btn active" onclick="showTab('login')">Đăng nhập</button>
-        <button class="tab-btn" onclick="showTab('register')">Đăng ký</button>
-      </h2>
-       <div  id="login-tab" class="tab-content active">
-          <div>
-            <p id="tab-desc">
-              Đăng nhập để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích và nhận nhiều ưu đãi hấp dẫn.
-            </p>
-            <form id="loginForm">
-              <label>Email hoặc tên đăng nhập:</label>
-              <input type="text" id="usernameLogin" />
-              <label>Mật khẩu:</label>
-              <input type="password" id="passwordLogin" />
-              <div class="forgot-password">
-                <a href="#" id="Forgot_Password" class="tab-btn"  onclick="showTab('forgot_password')" >Bạn quên mật khẩu?</a>
-              </div>
-              <button type="submit">Đăng nhập</button>
-            </form>
+
+      <div class="footer-section">
+        <div class="footer-column">
+          <h3>Giới Thiệu</h3>
+          <div class="footer-column1">
+            <ul>
+              <li>
+                <a href="#">Game bản quyền là gì?</a>
+              </li>
+              <li>
+                <a href="#">Giới thiệu AE shop</a>
+              </li>
+              <li>
+                <a href="#">Điều khoản dịch vụ</a>
+              </li>
+              <li>
+                <a href="#">Chính sách bảo mật</a>
+              </li>
+            </ul>
           </div>
-       </div>
- 
-       <div id="register-tab" class="tab-content">
-        <p>
-          Đăng ký để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích và nhận nhiều ưu đãi hấp dẫn
-        </p>
-        <form id="register-form">
-          <label for="name">Họ và Tên:</label>
-          <input type="text" id="name" />
-          
-        
-          <label for="email">Email:</label>
-          <input type="email" id="email" />
-        
-          <label for="username">Tên đăng nhập:</label>
-          <input type="text" id="username" />
-        
-          <label for="password">Mật khẩu:</label>
-          <input type="password" id="password" />
-        
-          <label for="confirm-password">Xác nhận mật khẩu:</label>
-          <input type="password" id="confirm-password" />
-        
-          <div class="accept">
-            <label>
-              <input type="checkbox" id="accept-terms" />
-              Tôi đồng ý nhận thông tin marketing mới từ App Shop.
-            </label>
-          </div>
-        
-          <button type="submit">Đăng ký</button>
-        </form>
-       </div>
-       <div  id="forgot_password-tab" class="tab-content">
-        <div>
-          <h2>Đặt lại mật khẩu</h2>
-          <p>Bạn vui lòng hoàn tất các thông tin xác thực bên dưới để chúng tôi đặt lại mật khẩu cho tài khoản của bạn          </p>
-          <form id="PasswordForm">
-          
-            <input type="text" id="usernamePassword" placeholder="Email hoặc tên đăng nhập"/>
-            <input type="password" id="newPassword" placeholder="Mật khẩu mới"/>
-            <input type="password" id="confirmPassword" placeholder="Nhập lại mật khẩu mới"/>
-            
-            <button type="submit">Đặt lại mật khẩu</button>
-          </form>
         </div>
-       </div>
-      
-      <div class="social-login">
-        <a href="#"><i class="fab fa-google"></i></a>
-        <a href="#"><i class="fab fa-facebook"></i></a>
+        <div class="footer-column">
+          <h3>Cài đặt</h3>
+          <div class="footer-column2">
+            <ul>
+              <li>
+                <a href="#">Cài đặt tài khoản</a>
+              </li>
+              <li>
+                <a href="#">Quản lí bảo mật</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Liên hệ</h3>
+          <div class="footer-column3">
+            <ul>
+              <li>
+                <a href="#">Hotline tự động <span style="color: red;">1900 599 850</span> </a>
+              </li>
+              <li>
+                <a href="#">Liên hệ hỗ trợ</a>
+              </li>
+              <li>
+                <a href="#">Chat với CSKH</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="illustration">
-      <img src="/img/login.svg" alt="">
     </div>
   </div>
-  
-  <!-- Đăng ký modal -->
-  <div class="register-modal js-modal-register">
-    <div class="form-container js-modal-register-container">
+</footer>
+</div>
+
+
+
+<!-- Đăng nhập modal -->
+<div class="login-modal js-modal-login" style="z-index: 2000;">
+  <div class="form-container js-modal-login-container">
+    <div class="close-btn js-modal-login-close">
+      <i class="fas fa-times"></i>
+    </div>
+    <h2 class="d-flex">
+      <button class="tab-btn active" onclick="showTab('login')">Đăng nhập</button>
+      <button class="tab-btn" onclick="showTab('register')">Đăng ký</button>
+    </h2>
+     <div  id="login-tab" class="tab-content active">
+        <div>
+          <p id="tab-desc">
+            Đăng nhập để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích và nhận nhiều ưu đãi hấp dẫn.
+          </p>
+          <form id="loginForm">
+            <label>Email hoặc tên đăng nhập:</label>
+            <input type="text" id="usernameLogin" />
+            <label>Mật khẩu:</label>
+            <input type="password" id="passwordLogin" />
+            <div class="forgot-password">
+              <a href="#" id="Forgot_Password" class="tab-btn"  onclick="showTab('forgot_password')" >Bạn quên mật khẩu?</a>
+            </div>
+            <button type="submit">Đăng nhập</button>
+          </form>
+        </div>
+     </div>
+
+     <div id="register-tab" class="tab-content">
+      <p>
+        Đăng ký để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích và nhận nhiều ưu đãi hấp dẫn
+      </p>
+      <form id="register-form">
+        <label for="name">Họ và Tên:</label>
+        <input type="text" id="name" />
+        
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" />
+      
+        <label for="username">Tên đăng nhập:</label>
+        <input type="text" id="username" />
+      
+        <label for="password">Mật khẩu:</label>
+        <input type="password" id="password" />
+      
+        <label for="confirm-password">Xác nhận mật khẩu:</label>
+        <input type="password" id="confirm-password" />
+      
+        <div class="accept">
+          <label>
+            <input type="checkbox" id="accept-terms" />
+            Tôi đồng ý nhận thông tin marketing mới từ App Shop.
+          </label>
+        </div>
+      
+        <button type="submit">Đăng ký</button>
+      </form>
+     </div>
+     <div  id="forgot_password-tab" class="tab-content">
+      <div>
+        <h2>Đặt lại mật khẩu</h2>
+        <p>Bạn vui lòng hoàn tất các thông tin xác thực bên dưới để chúng tôi đặt lại mật khẩu cho tài khoản của bạn          </p>
+        <form id="PasswordForm">
+        
+          <input type="text" id="usernamePassword" placeholder="Email hoặc tên đăng nhập"/>
+          <input type="password" id="newPassword" placeholder="Mật khẩu mới"/>
+          <input type="password" id="confirmPassword" placeholder="Nhập lại mật khẩu mới"/>
+          
+          <button type="submit">Đặt lại mật khẩu</button>
+        </form>
+      </div>
+     </div>
+    
+    <div class="social-login">
+      <a href="#"><i class="fab fa-google"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+    </div>
+  </div>
+  <div class="illustration">
+    <img src="../img/login.svg" alt="">
+  </div>
+</div>
+
+<!-- Đăng ký modal -->
+<div class="register-modal js-modal-register">
+  <div class="form-container js-modal-register-container">
+    <div class="close-btn js-modal-register-close">
+      <i class="fas fa-times">
+      </i>
+    </div>
+    <h2>
+      <a href="">Đăng nhập</a> / <a href="">Đăng ký</a>
+    </h2>
+    <p>
+      Đăng ký để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích và nhận nhiều ưu đãi hấp dẫn
+    </p>
+    <form>
+      <label for="">Họ và Tên:</label>
+      <input type="text" />
+      <label for="">Email:</label>
+      <input type="email">
+      <label for="">Tên đăng nhập:</label>
+      <input type="text">
+      <label for="">Mật khẩu:</label>
+      <input type="password" />
+      <label for="">Xác nhận mật khẩu:</label>
+      <input type="password">
+      <div class="accept">
+        <label><input type="checkbox"> Tôi đồng ý nhận thông tin marketing mới từ App Shop. </label>
+      </div>
+      <button type="submit">
+        Đăng ký
+      </button>
+    </form>
+  </div>
+  <div class="illustration">
+    <img src="../img/login.svg" alt="">
+  </div>
+</div>
+
+<div class="modal-backdrop js-modal-backdrop">
+ 
+</div>
+
+  <div class="register-modal js-modal-Forgot Password">
+    <div class="form-container">
       <div class="close-btn js-modal-register-close">
         <i class="fas fa-times">
         </i>
       </div>
-      <h2>
-        <a href="">Đăng nhập</a> / <a href="">Đăng ký</a>
-      </h2>
-      <p>
-        Đăng ký để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích và nhận nhiều ưu đãi hấp dẫn
-      </p>
-      <form>
-        <label for="">Họ và Tên:</label>
-        <input type="text" />
-        <label for="">Email:</label>
-        <input type="email">
-        <label for="">Tên đăng nhập:</label>
-        <input type="text">
-        <label for="">Mật khẩu:</label>
-        <input type="password" />
-        <label for="">Xác nhận mật khẩu:</label>
-        <input type="password">
-        <div class="accept">
-          <label><input type="checkbox"> Tôi đồng ý nhận thông tin marketing mới từ App Shop. </label>
-        </div>
-        <button type="submit">
-          Đăng ký
-        </button>
-      </form>
+      
     </div>
     <div class="illustration">
-      <img src="/img/login.svg" alt="">
+      <img src="../img/login.svg" alt="">
     </div>
   </div>
-  
-  <div class="modal-backdrop js-modal-backdrop">
-   
-  </div>
-
-    <div class="register-modal js-modal-Forgot Password">
-      <div class="form-container">
-        <div class="close-btn js-modal-register-close">
-          <i class="fas fa-times">
-          </i>
-        </div>
-        
-      </div>
-      <div class="illustration">
-        <img src="/img/login.svg" alt="">
-      </div>
-    </div>
-  </body>
+</body>
 
 
 
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-</html>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
