@@ -1,44 +1,4 @@
 
-        
-        // code dòng chữ chuyển động
-        
-        const texts = [
-            "Thiết kế dễ dàng cùng Canva Pro",
-            "XBox Game Pass",
-            "Giải trí cực Chill",
-            "Kết nối yêu thương cùng Tinder Plus"
-        ];
-        
-        let currentIndex = 0;
-        
-        // Hàm cập nhật văn bản hiển thị
-        function updateText() {
-            const textElement = document.querySelector('.text');
-            textElement.textContent = texts[currentIndex];
-        }
-        
-        // Hàm chuyển đến văn bản tiếp theo
-        function nextText() {
-            currentIndex = (currentIndex + 1) % texts.length; // Chuyển đến chỉ số tiếp theo
-            updateText();
-        }
-        
-        // Hàm chuyển đến văn bản trước
-        function prevText() {
-            currentIndex = (currentIndex - 1 + texts.length) % texts.length; // Chuyển đến chỉ số trước
-            updateText();
-        }
-        
-        // Gán sự kiện click cho các nút
-        document.getElementById('next-btn').addEventListener('click', nextText);
-        document.getElementById('prev-btn').addEventListener('click', prevText);
-        
-        // Tự động chuyển đổi văn bản sau mỗi 3 giây
-        setInterval(nextText, 4000);
-        
-        // Cập nhật văn bản ban đầu
-        updateText();
-        
 
     function getQueryParameter(name) { 
         var urlParams = new URLSearchParams(window.location.search);
