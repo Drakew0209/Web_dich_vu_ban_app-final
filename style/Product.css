@@ -38,7 +38,7 @@
         .product .product-kid  {
             position: absolute;
             top: 65%;
-            left: 16%;
+            left: 20%;
             
         }
 
@@ -288,8 +288,9 @@
 
         .modal-thong-bao {
             position: fixed;
-            right: 20px; /* Cách từ bên phải */
-            bottom: 20px; /* Cách từ dưới cùng */
+            width: 10%;
+            right: 20px; 
+            bottom: 20px; 
             z-index: 1000; 
             background-color: rgb(140, 223, 226);
             color: #fff;
@@ -300,4 +301,13 @@
             opacity: 1; 
             transform: translateY(10px);
             transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+
+        .modal-thong-bao button {
+            background-color: rgb(140, 223, 226);
+            color: #fff;
+            border: none;
+            font-weight: 600;
+            font-size: 14px;
         }
