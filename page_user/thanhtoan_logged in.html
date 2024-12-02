@@ -178,7 +178,7 @@
 
 <!--thanh toán nha-->
 <div class="code_@_@">
-    <div class="code_0">
+    <div class="code_0" id="myDiv">
         <div class="code_1">
             <div class="code_2">
             <div class="code_3" style="background-color: #2579f2;"> </div> 
@@ -200,7 +200,7 @@
         <div class="code_49">
             <div class="code_50">
                 <div> <img class="code_55" src="../icon/logo pay.png" alt=""> </div>
-                <div> <b>✨✨ Thanh toán liên ngân hàng - QR ✨✨</b></div>
+                <div> <b>✨✨ Thanh toán ✨✨</b></div>
             </div>
             <div class="code_51">
                 <div class="code_53">
@@ -219,14 +219,38 @@
             <div class="code_52">
                 <div><img class="code_13" src="../img/QR.jpg" alt="" > </div>
                 <div class="code_54">
-                    <div class="code_54"><b>Thực hiện theo hướng dẫn sau để thanh toán:</b></div>
-                    <div class="code_54">Bước 1: Mở ứng dụng Mobile Banking của ngân hàng</div>
-                    <div class="code_54">Bước 2: Chọn "Thanh Toán" và quét mã QR tại hướng dẫn này</div>
-                    <div class="code_54">Bước 3: Hoàn thành các bước thanh toán theo hướng dẫn và đợi xử lý trong giây lát</div>
+                    <div><label for="payment--adr"><i class="far fa-address-card"></i></i> Địa chỉ email muốn nhận key: </label></div>
+                    <div><input class="code_11" style="width: 100%;" type="text" id="payment--adr" required placeholder="Địa chỉ email"></div>
+                    
+                    <div class="code_54"><b>Quét QR ở bên trái hoặc chuyển khoản theo thông tin bên dưới: </b></div>
+                    <div class="code_54">1. Ngân hàng TMCP Công Thương Việt Nam - Vietinbank </div>
+                    <div class="code_54"> Số tài khoản: 0849971669</div>
+                    <div class="code_54"> Chủ tài khoản: VU HOANG PHUONG</div>
+                    <div class="code_54"> Nội dung: SĐT + Họ và Tên</div>
+                    <button class="code_38" onclick="toggleDisplay()">
+                      <div>Đã thanh toán</div></a>
+                  </button>
                 </div>
             </div>
         </div>
+        h
     </div>
+
+    <div class="code_56" id="otherDiv" >
+    <!--cảm ơn sau khi thanh toán-->
+      <div class="thankyou">
+        <h1 style="color:#12a345; text-align: center; ">Thanh toán thành công</h1>
+        <h3 style="text-align: center;">Cảm ơn bạn đã mua hàng! Đơn hàng của bạn đang được xử lý.</h3>
+        <div style="align-items: center;">
+          <div class="code_4" style="width: 100%;"></div>
+          <div class="code_57">
+            <a class="code_58" href="../page_user/order-history.html"><button class="code_35" >Xem đơn hàng</button></a>
+            <a class="code_58" href="../page_user/index_logged in.html"><button class="code_35" >Trở về trang chủ</button></a> 
+        </div>
+        </div>
+    </div>
+  </div>
+
 </div>
 <footer>
     <div class="footer-best">
@@ -443,9 +467,7 @@
       </div>
     </div>
   </body>
-
-
-
+  <script src="/js/pay.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </html>
