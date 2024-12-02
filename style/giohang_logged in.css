@@ -735,8 +735,14 @@ body {
 .code_35{
     background-color: #007BFF;
 }
+.code_35:hover{
+    background-color: #0057B7;
+}
 .code_36{
     background-color: #004494;
+}
+.code_36:hover{
+    background-color: #053d7c;
 }
 .code_37{
     background-color: #ad2b68;
@@ -797,10 +803,33 @@ body {
     height: auto;
 }
 .code_54{
-    padding: 20px;
+    padding: 10px;
 }
 .code_55{
    width: 63px;
+}
+.code_56{
+    width: 90%;
+    margin: 15px auto;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+    padding: 30px;
+}
+.code_57{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    place-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.code_58{
+    width: 20%;
+    align-items: center;
+    justify-content: center;
 }
 .changed_color_1 {
     background-color: #2579f2; 
@@ -808,7 +837,9 @@ body {
 .changed_color_2{
     color: #2579f2;
 }
-
+.code_38:hover {
+    background-color: #0b8d39;
+}
 
 
 
