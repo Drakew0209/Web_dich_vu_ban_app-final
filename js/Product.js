@@ -1,18 +1,19 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const buyNowButton = document.getElementById("buy-now");
-    const addToCartButton = document.getElementById("add-to-cart");
-    const toast = document.getElementById("toast");
+document.querySelector('#buy-now').addEventListener('click', function() {
+    // Hiển thị modal thông báo sản phẩm đã được thêm vào giỏ hàng
+    const modal = document.querySelector('.modal-thong-bao');
+    modal.style.display = 'block'; // Hiển thị modal
 
-    function showToast() {
-        toast.classList.add("show");
-        setTimeout(() => {
-            toast.classList.remove("show");
-        }, 3000); // Thông báo hiển thị trong 3 giây
-    }
-
-    buyNowButton.addEventListener("click", showToast);
-    addToCartButton.addEventListener("click", showToast);
+    // Tự động ẩn modal sau 3 giây (3000ms)
+    setTimeout(() => {
+        modal.style.display = 'none';
+    }, 3000);
 });
+
+// Thêm sự kiện cho nút "Đóng"
+document.querySelector('.close-modal').addEventListener('click', function() {
+    document.querySelector('.modal-thong-bao').style.display = 'none'; // Ẩn modal khi nhấn nút "Đóng"
+});
+
 
 
 document.querySelector('.toggle-button').addEventListener('click', function() {

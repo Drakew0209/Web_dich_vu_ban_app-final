@@ -6,7 +6,7 @@
             display: flex;
             flex-wrap: wrap;
             width: 100%;
-            margin: 0 auto;
+            margin: 20px auto;
         }
 
         .total-insite-content {
@@ -285,3 +285,19 @@
             padding-top: 10px;
         }
 
+
+        .modal-thong-bao {
+            position: fixed;
+            right: 20px; /* Cách từ bên phải */
+            bottom: 20px; /* Cách từ dưới cùng */
+            z-index: 1000; 
+            background-color: rgb(140, 223, 226);
+            color: #fff;
+            font-weight: 600;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            opacity: 1; 
+            transform: translateY(10px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
