@@ -228,7 +228,7 @@ function showTab(tab) {
       title: "Thông báo",
       text: "Đăng nhập thành công",
     }).then(() => {
-      window.location.href = '/page_user/index_logged in.html'; // Đảm bảo đường dẫn chính xác
+      window.location.href = '../page_user/index_logged in.html'; // Đảm bảo đường dẫn chính xác
       document.querySelector('.cart-info').style.display = 'block';
       document.querySelector('.cart-1').classList.add('hidden');
       document.querySelector('.cart-1-reponsive').classList.add('hidden');
