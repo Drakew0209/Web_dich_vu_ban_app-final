@@ -280,6 +280,9 @@ a{
 }
 
 .sidebar {
+    position: absolute !important;
+    left: 10% !important;
+    width: 15% !important;
     border-radius: 10px;
     background-color: white;
     padding: 10px;
